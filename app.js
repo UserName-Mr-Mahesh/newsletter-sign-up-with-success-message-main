@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (isValidEmail(email)) {
         document.getElementById("sub").style.display = "none";
         document.getElementById("diss").style.display = "block";
+        document.getElementById("op").innerHTML= email;
       } else {
         iemail.style.borderColor = "red";
         document.getElementsByClassName("submit")[0].style.backgroundColor = "black";
