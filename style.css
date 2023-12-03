@@ -1,0 +1,142 @@
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+  
+*{
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-grey);
+}
+.card{
+    background-color: var(--White);
+    width: 55rem;
+    border-radius: 2rem 2rem 2rem 2rem;
+}
+#sub>.container{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+}
+form{
+    width: 70%;
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+h1{
+    font-size: 55px;
+}
+p{
+    font-size: 16px;
+}
+td{
+    display: flex;
+}
+td svg{
+    padding-right:10px ;
+    width: 35px;
+}
+.jpg #mobile{
+    display: none;
+}
+input{
+    border: 1px solid var(--Smokey-grey);
+}
+input,button{
+    width: 90%;
+    height: 2rem;
+    border-radius: 5px;
+    padding: 20px;
+}
+button{
+    background-color: var(--Light-red);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#diss{
+    display: none;
+    background-color: var(--White);
+    width: 25rem;
+    border-radius: 2rem 2rem 2rem 2rem;
+}
+
+#diss>.container{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+#diss form{
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+#diss button{
+    width: 100%;
+    padding: 1rem 2rem; 
+}
+#btn{
+    padding: 2rem;
+}
+.dismiss{
+    transition: 0.5s;
+}
+@media screen and (max-width:600px) {
+    .card{
+        background-color: var(--White);
+        width: 25rem;
+        border-radius: 2rem 2rem 2rem 2rem;
+    }
+    #sub>.container{
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    form{
+        width: 100%;
+        padding: 2rem;
+        display: grid;
+        gap: 1rem;
+    }
+    h1{
+        font-size: 45px;
+    }
+    
+    .jpg #mobile{
+        display: block;
+    }
+    .jpg #window{
+        display: none;
+    }
+    #diss{
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #diss>.container{
+        display: grid;
+        padding: 20% 0 0 0;
+        gap: 10rem;
+    }
+    .dismiss{
+        transition: 0.5s;
+    }
+}
