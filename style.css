@@ -126,9 +126,9 @@ button{
         display: none;
     }
     #diss{
-        display: block;
-        width: 100%;
-        height: 100vh;
+        display: none;
+        width: 25rem;
+        border-radius: 2rem 2rem 2rem 2rem;
     }
     
     #diss>.container{
